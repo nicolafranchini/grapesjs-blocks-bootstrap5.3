@@ -59,14 +59,14 @@ export default (editor) => {
                             {value: 'dropdown', name: 'Dropdown'}
                         ],
                         label: 'Toggles',
-                        name: 'data-toggle',
+                        name: 'data-bs-toggle',
                         changeProp: 1
                     }
                 ].concat(textModel.prototype.defaults.traits)
             }),
             init2() {
                 //textModel.prototype.init.call(this);
-                this.listenTo(this, 'change:data-toggle', this.setupToggle);
+                this.listenTo(this, 'change:data-bs-toggle', this.setupToggle);
                 this.listenTo(this, 'change:attributes', this.setupToggle); // for when href changes
             },
             setupToggle(a, b, options = {}) { // TODO this should be in the dropdown comp and not the link comp
@@ -77,7 +77,7 @@ export default (editor) => {
                 const attrs = this.getAttributes();
                 const href = attrs.href;
                 // old attributes are not removed from DOM even if deleted...
-                delete attrs['data-toggle'];
+                delete attrs['data-bs-toggle'];
                 delete attrs['aria-expanded'];
                 delete attrs['aria-controls'];
                 delete attrs['aria-haspopup'];
@@ -98,10 +98,10 @@ export default (editor) => {
                             const intersection = el_classes_list.filter(x => includes.includes(x));
 
                             if (intersection.length) {
-                                console.log('link data-toggle matches el class');
+                                console.log('link data-bs-toggle matches el class');
                                 switch (intersection[0]) {
                                     case 'collapse':
-                                        attrs['data-toggle'] = 'collapse';
+                                        attrs['data-bs-toggle'] = 'collapse';
                                         break;
                                 }
                                 attrs['aria-expanded'] = el_classes_list.includes('show');

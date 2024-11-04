@@ -6,7 +6,7 @@ export const SelectBlock = (bm, label) => {
       ${selectIcon}
       <div>${label}</div>`,
         category: 'Forms',
-        content: `<select class="form-control" name="select1">
+        content: `<select class="form-select" name="select1">
         ${label ? `<option value="">${label}</option>` : ''}
         <option value="1">${label} 1</option>
         </select>`,

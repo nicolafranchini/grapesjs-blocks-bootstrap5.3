@@ -109,7 +109,7 @@ export default (editor) => {
                     const toggle_attrs = toggle.getAttributes();
                     toggle_attrs['role'] = 'button';
                     const menu_attrs = menu.getAttributes();
-                    if (!toggle_attrs.hasOwnProperty('data-toggle')) {
+                    if (!toggle_attrs.hasOwnProperty('data-bs-toggle')) {
                         toggle_attrs['data-bs-toggle'] = 'dropdown';
                     }
                     if (!toggle_attrs.hasOwnProperty('aria-haspopup')) {
