@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-blocks-bootstrap5.3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GrapesJS Bootstrap v5.3 Blocks Plugin",
   "main": "dist/grapesjs-blocks-bootstrap5.3.min.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "plugin",
     "bootstrap5.3"
   ],
-  "author": "z1lk",
+  "author": "nicolafranchini",
   "license": "BSD-3-Clause",
   "peerDependencies": {
     "grapesjs": "0.x"
