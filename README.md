@@ -1,4 +1,4 @@
-# GrapesJS Bootstrap v4 Blocks Plugin
+# GrapesJS Bootstrap v5.3 Blocks Plugin
 
 [![npm](https://img.shields.io/npm/v/grapesjs-blocks-bootstrap4.svg)](https://www.npmjs.com/package/grapesjs-blocks-bootstrap4)
 
